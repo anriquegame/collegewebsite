@@ -1,4 +1,5 @@
 body {
+    /* overflow: scroll; */
     margin: 0;
 }
 .link {
@@ -9,4 +10,44 @@ body {
 header {
 
     background-color:rgb(153, 153, 153)
+}
+#content ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* muda a scroll bar o estilo dela */
+#content ul::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border:  1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+
+/* muda a barra do scroll */
+#content ul::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+}
+#content ul::-webkit-scrollbar-thumb {
+    /* background-color: var(--color-primary); */
+    background-color: #2fcff7;
+    outline: 1px solid #2fcff7;
+}
+
+#content ul li {
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid #d5d5d5; /* Adiciona uma borda ao redor do <li> */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#content ul li:hover{
+    transform: scale(1.1);
+}
+#content ul li img{
+    width: 200px;
+    height: auto;
+    margin: 10px;
 }

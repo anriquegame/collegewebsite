@@ -11,6 +11,9 @@ header {
 
     background-color:rgb(153, 153, 153)
 }
+#logo:hover {
+    -webkit-filter: invert(100%);
+}
 #content ul {
     white-space: nowrap;
     overflow-x: auto;
@@ -19,7 +22,7 @@ header {
 
 /* muda a scroll bar o estilo dela */
 #content ul::-webkit-scrollbar {
-    height: 5px;
+    height: 7px;
     width: 2px;
     border:  1px solid #d5d5d5;
     background: #d5d5d5;
@@ -42,6 +45,7 @@ header {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 #content ul li:hover{
     transform: scale(1.1);
